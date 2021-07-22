@@ -4,7 +4,7 @@ import { estrellas,arregloEstrellas } from "./estrellas.js";
 document.querySelector(".btn-print").addEventListener("click",()=>{
     const number=document.querySelector(".number").value
     const stars=estrellas(number)
-    stars.length==number&&stars&&stars.charCodeAt(1)==42&&typeof(stars)==="string"?
+    stars.length==number&&stars&&stars.charCodeAt(0)==42&&typeof(stars)==="string"?
     isValid(number,stars):
         document.querySelector(".print").innerHTML=":) aun no, pero tu puedes revisa bien tu codigo porque hay un error"
 })
